@@ -7,8 +7,59 @@ Template: twentytwentyfive
 
 @import url("../twentytwentyfive/style.css");
 
-/* Custom CSS starts here */
+/* --Theme colours-- */
 
-.wp-block-post-title {
+:root {
+  --primary: #4caf50;
+  --secondary: #2c3e50;
+  --accent: #f5a623;
+  --background: #fafafa;
+  --text: #333333;
+}
+
+/* --home page-- */
+
+.home .wp-block-post-title {
   display: none;
+}
+
+/* --contact page-- */
+
+.page-contact-us strong {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.wpcf7-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1px;
+}
+
+.name-and-email-seperator {
+  display: flex;
+  flex-direction: row;
+}
+
+.wpcf7-text {
+  padding: 10px;
+  border-radius: 3px;
+  min-width: 100%;
+}
+
+.wpcf7-textarea {
+  padding: 10px;
+  border-radius: 3px;
+  font-size: large;
+}
+
+.wpcf7-submit {
+  border-radius: 50px;
+  padding: 10px;
+  font-size: larger;
+}
+
+.wpcf7-submit:hover {
+  cursor: pointer;
 }
