@@ -35,23 +35,17 @@ Template: twentytwentyfive
   flex-direction: column;
   align-items: start;
   gap: 1px;
+  box-sizing: border-box;
 }
 
-.name-and-email-seperator {
-  display: flex;
-  flex-direction: row;
-}
-
-.wpcf7-text {
-  padding: 10px;
-  border-radius: 3px;
-  min-width: 100%;
-}
-
+.wpcf7-text,
 .wpcf7-textarea {
+  box-sizing: border-box;
   padding: 10px;
-  border-radius: 3px;
-  font-size: large;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.125rem;
 }
 
 .wpcf7-submit {
