@@ -20,10 +20,6 @@ Template: twentytwentyfive
   margin-block-end: 60;
 }
 
-/* --layout fixes-- */
-
-/* --layout fixes for homepage only-- */
-
 /* --remove top spacing on homepage only-- */
 .home main.wp-block-group {
   margin-top: 0 !important;
@@ -45,6 +41,20 @@ Template: twentytwentyfive
 }
 
 /* --contact page-- */
+
+.page-id-37 .wp-block-post-title {
+  text-align: center; /* this is the contact us title */
+}
+
+.page-contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-contact-us .wp-block-post-title {
+  text-align: center;
+  border: 1px solid red;
+}
 
 .page-contact-us strong {
   font-style: italic;
