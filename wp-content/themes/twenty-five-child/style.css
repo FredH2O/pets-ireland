@@ -53,6 +53,19 @@ Template: twentytwentyfive
   color: #2c3e50;
 }
 
+.our-mission {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  padding: 50px 0;
+}
+
+.our-mission .wp-block-heading {
+  text-align: start;
+  width: 100%;
+}
+
 /* --contact page-- */
 
 .page-id-37 .wp-block-post-title {
