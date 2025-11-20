@@ -1,21 +1,28 @@
-# Twenty-Five Child Theme
+# Astra Child Theme
 
-This is a custom wordpress child theme thats based on the 2025 parent theme, it demonstrates custom templates, some functions and wordpress best practices.
+A handcrafted child theme built atop the trusted Astra parent theme — a space where old-school PHP templates meet modern WordPress flexibility. This theme showcases custom post types, bespoke templates, tidy functions, and a clean developer-first structure.
 
 ---
 
-## Theme Features
+## ✨ Theme Features
 
-- custom `archive-pet.php` and `single-pet.php` templates for the Pet post type.
-- custom functions in `functions.php` using enqueue/styles, custom hooks, etc.
-- fully inherits styles and functionality from 2025 parent theme.
-- clean, organized child theme structure.
+--Dedicated templates for your Pet custom post type:
+
+----archive-pet.php — your gallery of adoptable companions
+
+----single-pet.php — a template ready for future expansion
+
+--A thoughtful functions.php using proper enqueueing, custom hooks, and classic WP practices
+
+--Full inheritance from the Astra parent theme, keeping everything lightweight and blazing fast
+
+--A simple, elegant structure made for learning, tinkering, and growing as a WordPress developer
 
 ---
 
 ## Folder Structure
 
-twenty-five-child/
+astra-child/
 ├── functions.php
 ├── style.css
 ├── archive-pet.php
@@ -26,9 +33,14 @@ twenty-five-child/
 
 ## Installation
 
-1. copy this folder into `wp-content/themes/`
-2. activate the theme from wordpress dashboard -> appearance -> theme
-3. the child theme will inherit the parent theme styles and functionality
+Place the folder inside:
+wp-content/themes/
+
+Visit Appearance → Themes in your WordPress dashboard.
+
+Activate Astra Child.
+
+Ensure the Astra parent theme is installed and present, as the child theme inherits all its power.
 
 ---
 
