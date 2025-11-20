@@ -53,5 +53,5 @@ Ensure the Astra parent theme is installed and present, as the child theme inher
 
 ## Notes
 
-- recommended to have the twenty-five parent theme installed and active
+- recommended to have the astra parent theme installed and active
 - add `screenshot.png` to represent the theme visually
