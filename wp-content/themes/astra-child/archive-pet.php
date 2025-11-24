@@ -13,17 +13,28 @@ get_header(); ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
                 <div class="pet-card">
-                    <a href="<?php the_permalink(); ?>">
-                        <div class="pet-card-thumbnail">
-                            <?php the_post_thumbnail('full'); ?>
-                        </div>
+                    <div class="pet-card-thumbnail">
+                        <?php the_post_thumbnail('full'); ?>
+                    </div>
+
+                    <div class="pet-details">
                         <h2><?php the_title(); ?></h2>
-                    </a>
-                    <p><?php the_excerpt(); ?></p>
-                    <ul>
-                        <li>Breed: <?php echo esc_html(get_field('breed')); ?></li>
-                        <li>Age: <?php echo esc_html(get_field('age')); ?></li>
-                    </ul>
+
+                        <p><?php the_excerpt(); ?></p>
+
+                        <ul>
+                            <li>Breed: <?php echo esc_html(get_field('breed')); ?></li>
+                            <li>Age: <?php echo esc_html(get_field('age')); ?></li>
+                            <li>Sex: <?php echo esc_html(get_field('sex')); ?></li>
+                            <li>Status: <?php echo esc_html(get_field('status')); ?></li>
+                            <li>Location: <?php echo esc_html(get_field('location')); ?></li>
+                            <li>Fee: €<?php echo esc_html(get_field('adoption_fee')); ?></li>
+                        </ul>
+                    </div>
+
+                    <button class="pet-card-button">
+                        <a href="<?php the_permalink(); ?>">Adopt Me</a>
+                    </button>
                 </div>
 
             <?php endwhile;
