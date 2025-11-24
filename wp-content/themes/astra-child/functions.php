@@ -28,3 +28,13 @@ function register_pet_post_type()
     );
     register_post_type('pet', $args);
 }
+
+function fred_custom_excerpt_more($more)
+{
+    if (get_post_type() === 'pet') {
+        return '... <a class="read-more" href="' . get_permalink() . '">Read More </a>';
+    }
+    return $more;
+}
+
+add_filter('excerpt_more', 'fred_custom_excerpt_more');
