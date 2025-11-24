@@ -84,7 +84,7 @@
 }
 
 .pet-card:hover {
-  background-color: pink;
+  background-color: #f8f8f8;
   transition: 0.3s ease-in-out;
 }
 
