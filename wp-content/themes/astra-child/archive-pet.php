@@ -6,7 +6,7 @@ get_header(); ?>
 
 <div class="archive-pets-page">
 
-    <h1>Pets for Adoption<?php post_type_archive_title(); ?></h1>
+    <h1>Pets for Adoption</h1>
 
     <div class="archive-pets-grid">
 
@@ -14,7 +14,7 @@ get_header(); ?>
 
                 <div class="pet-card">
                     <a href="<?php the_permalink(); ?>">
-                        <div>
+                        <div class="pet-card-thumbnail">
                             <?php the_post_thumbnail('full'); ?>
                         </div>
                         <h2><?php the_title(); ?></h2>

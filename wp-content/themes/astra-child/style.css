@@ -75,3 +75,8 @@
   gap: 5px;
   border: 1px solid red;
 }
+
+.pet-card ul > li {
+  text-align: center;
+  list-style: none;
+}
