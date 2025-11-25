@@ -12,8 +12,6 @@
   --accent: #f5a623;
   --text: #333333;
   --wp--preset--spacing--60: 0;
-  margin-block-start: 0;
-  margin-block-end: 60;
 }
 
 :root :where(.is-layout-constrained) > * {
@@ -29,7 +27,7 @@
 .heading-and-motto {
   display: flex;
   flex-direction: column;
-  gap: 1;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
 }
@@ -51,8 +49,7 @@
 
 @media screen and (min-width: 425px) {
   .home .wp-block-heading {
-    font-size: 2rem;
-    white-space: nowrap;
+    font-size: 4rem;
   }
 }
 
@@ -86,6 +83,7 @@
 .pet-card:hover {
   background-color: #f8f8f8;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .pet-card-thumbnail img {
@@ -111,6 +109,7 @@
   grid-template-columns: repeat(2, 1fr);
   margin: 0;
   padding: 5px;
+  gap: 5px;
 }
 
 .pet-details ul > li {
