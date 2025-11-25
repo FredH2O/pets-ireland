@@ -21,12 +21,36 @@ get_header(); ?>
                         <h2><?php the_title(); ?></h2>
                         <p class="pet-card-excerpt"><?php echo get_the_excerpt(); ?></p>
                         <ul>
-                            <li>Breed: <?php echo esc_html(get_field('breed')); ?></li>
-                            <li>Age: <?php echo esc_html(get_field('age')); ?></li>
-                            <li>Sex: <?php echo esc_html(get_field('sex')); ?></li>
-                            <li>Status: <?php echo esc_html(get_field('status')); ?></li>
-                            <li>Location: <?php echo esc_html(get_field('location')); ?></li>
-                            <li>Fee: €<?php echo esc_html(get_field('adoption_fee')); ?></li>
+                            <li>
+                                <i class="fa fa-paw" aria-hidden="true"></i>
+                                <?php echo esc_html(get_field('breed')); ?>
+                            </li>
+                            <li>
+                                <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+                                <?php echo esc_html(get_field('age')); ?>
+                            </li>
+
+                            <li>
+                                <i class="fa fa-transgender" aria-hidden="true"></i>
+                                <?php
+                                $value = get_field('gender');
+                                echo $value ? ucfirst($value) : ''; // Male / Female
+                                ?>
+                            </li>
+
+                            <li>
+                                <i class="fa fa-question" aria-hidden="true"></i>
+                                <?php echo esc_html(get_field('status')); ?>
+                            </li>
+
+                            <li>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <?php echo esc_html(get_field('location')); ?>
+                            </li>
+                            <li>
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                                €<?php echo esc_html(get_field('adoption_fee')); ?>
+                            </li>
                         </ul>
                     </div>
 
