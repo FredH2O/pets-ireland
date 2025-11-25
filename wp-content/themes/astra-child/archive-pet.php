@@ -19,9 +19,7 @@ get_header(); ?>
 
                     <div class="pet-details">
                         <h2><?php the_title(); ?></h2>
-
-                        <p><?php the_excerpt(); ?></p>
-
+                        <p class="pet-card-excerpt"><?php echo get_the_excerpt(); ?></p>
                         <ul>
                             <li>Breed: <?php echo esc_html(get_field('breed')); ?></li>
                             <li>Age: <?php echo esc_html(get_field('age')); ?></li>

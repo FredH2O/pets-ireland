@@ -97,12 +97,23 @@
   display: block;
 }
 
-.pet-card ul {
+.pet-details {
+  padding: 10px 0;
+}
+
+.pet-card-excerpt {
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+
+.pet-details ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin: 0;
   padding: 5px;
 }
 
-.pet-card ul > li {
+.pet-details ul > li {
   list-style: none;
 }
 
