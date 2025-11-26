@@ -25,6 +25,7 @@ function register_pet_post_type()
         'rewrite' => array('slug' => 'pets'),
         'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
         'show_in_rest' => true, // gutenburg , acf block
+        'menu_icon' => 'dashicons-pets'
     );
     register_post_type('pet', $args);
 }
