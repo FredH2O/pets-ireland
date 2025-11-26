@@ -53,7 +53,7 @@
   }
 }
 
-/* ===== archive pet styling ===== */
+/* ===== archive pet grid styling ===== */
 
 .archive-pets-page {
   margin: 10px 0;
@@ -130,4 +130,15 @@
   .archive-pets-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ===== archive pet single post ===== */
+
+.single-pet-post {
+  margin: 5rem 0;
+}
+
+.pet-details {
+  display: flex;
+  gap: 2rem;
 }
