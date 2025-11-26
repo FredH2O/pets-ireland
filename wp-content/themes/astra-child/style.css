@@ -142,3 +142,46 @@
   display: flex;
   gap: 2rem;
 }
+
+.adoption-fee {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.adoption-fee .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: 300px;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 100;
+  bottom: 125%;
+  left: 10%;
+  transition: opacity 0.3s;
+  font-size: 0.9rem;
+}
+
+.adoption-fee .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333333 transparent transparent transparent;
+}
+
+.adoption-fee:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.adoption-fee {
+  border-bottom: 1px dotted #333; /* subtle dotted underline */
+}

@@ -16,9 +16,12 @@ get_header(); ?>
             echo $value ? ucfirst($value) : ''; // first letter uppercase
             ?>
         </p>
-        <p>
+        <p class="adoption-fee">
             <i class="fa fa-money" aria-hidden="true"></i>
             €<?php echo esc_html(get_field('adoption_fee')); ?>
+            <span class="tooltip">
+                PLEASE BE AWARE WE ASK FOR A €<?php echo esc_html(get_field('adoption_fee')); ?> ADOPTION DONATION. The sum covers some of our veterinary costs for dogs to be neutered/spayed, vaccinated, microchipped and treated for external and internal parasites. In addition, adopters will be given a Maxi Zoo discount offering €10 off every €50 spend in their shops nationwide.
+            </span>
         </p>
     </div>
     <div class="pet-content">
