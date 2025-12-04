@@ -6,10 +6,15 @@ Template Name: Single Pets Archive Page
 get_header(); ?>
 
 <div class="single-pet-post">
+    <!-- Thumbnail -->
     <div class="single-pet-thumbnail">
         <?php the_post_thumbnail('full'); ?>
     </div>
+
+    <!-- Pet Title -->
     <h1><?php the_title(); ?></h1>
+
+    <!-- Pet Details -->
     <div class="single-pet-details">
         <p>
             <i class="fa fa-question" aria-hidden="true"></i>
@@ -22,14 +27,18 @@ get_header(); ?>
             <i class="fa fa-money" aria-hidden="true"></i>
             €<?php echo esc_html(get_field('adoption_fee')); ?>
             <span class="tooltip">
-                PLEASE BE AWARE WE ASK FOR A €<?php echo esc_html(get_field('adoption_fee')); ?> ADOPTION DONATION. The sum covers some of our veterinary costs for dogs to be neutered/spayed, vaccinated, microchipped and treated for external and internal parasites. In addition, adopters will be given a Maxi Zoo discount offering €10 off every €50 spend in their shops nationwide.
+                PLEASE BE AWARE WE ASK FOR A €<?php echo esc_html(get_field('adoption_fee')); ?> ADOPTION DONATION. The sum covers veterinary costs for neutering/spaying, vaccinations, microchipping, and parasite treatments. Adopters also get a €10 discount per €50 spend at Maxi Zoo nationwide.
             </span>
         </p>
     </div>
-    <div class="pet-content">
+
+    <!-- Pet Content -->
+    <div class="single-pet-content">
         <?php the_content(); ?>
     </div>
-    <button>Adopt Me 🐶</button>
+
+    <!-- Adopt Button -->
+    <a class="single-pet-button" href="">Adopt Me 🐶</a>
 </div>
 
 <?php get_footer(); ?>

@@ -136,23 +136,50 @@
 
 /* ===== archive pet single post ===== */
 
-.single-pet-thumbnail img {
+.single-pet-thumbnail {
+  width: 300px;
   height: 300px;
-  width: 500px;
-  object-fit: cover; /* keeps aspect ratio, fills div */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.single-pet-thumbnail img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.single-pet-thumbnail img:hover {
+  transform: scale(1.05);
 }
 
 .single-pet-post {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   margin: 5rem 0;
-  max-height: 100vh;
+  max-width: 800px; /* constrain content width */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px; /* small padding for mobile */
+  text-align: center;
 }
 
 .single-pet-details {
   display: flex;
+  justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.single-pet-content p,
+.single-pet-details p {
+  margin-bottom: 0;
 }
 
 .adoption-fee {
@@ -196,6 +223,11 @@
 
 .adoption-fee {
   border-bottom: 1px dotted #333; /* subtle dotted underline */
+}
+
+.single-pet-post button {
+  border: 1px solid yellow;
+  width: auto;
 }
 
 /* ===== pop up maker styling ===== */
