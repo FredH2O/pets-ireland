@@ -6,9 +6,11 @@ Template Name: Single Pets Archive Page
 get_header(); ?>
 
 <div class="single-pet-post">
-    <div class="single-pet-image"><?php the_post_thumbnail('full'); ?></div>
+    <div class="single-pet-thumbnail">
+        <?php the_post_thumbnail('full'); ?>
+    </div>
     <h1><?php the_title(); ?></h1>
-    <div class="pet-details">
+    <div class="single-pet-details">
         <p>
             <i class="fa fa-question" aria-hidden="true"></i>
             <?php

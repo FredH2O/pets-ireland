@@ -96,7 +96,9 @@
 }
 
 .pet-details {
-  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .pet-card-excerpt {
@@ -134,11 +136,21 @@
 
 /* ===== archive pet single post ===== */
 
-.single-pet-post {
-  margin: 5rem 0;
+.single-pet-thumbnail img {
+  height: 300px;
+  width: 500px;
+  object-fit: cover; /* keeps aspect ratio, fills div */
+  object-position: center;
+  display: block;
+  border-radius: 10px;
 }
 
-.pet-details {
+.single-pet-post {
+  margin: 5rem 0;
+  max-height: 100vh;
+}
+
+.single-pet-details {
   display: flex;
   gap: 2rem;
 }
