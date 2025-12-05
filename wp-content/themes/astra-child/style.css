@@ -98,11 +98,15 @@
 .pet-details {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 10px;
+}
+
+.pet-details h2 {
+  padding-top: 10px;
 }
 
 .pet-card-excerpt {
-  padding: 10px 0;
+  padding: 5px 0;
   margin-bottom: 0;
 }
 
@@ -110,7 +114,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0;
-  padding: 5px;
+  padding-bottom: 10px;
   gap: 5px;
 }
 
