@@ -244,6 +244,10 @@
   margin: auto;
 }
 
+.donation-form-wrapper .donation-form-message {
+  padding-top: 10px;
+}
+
 @media (max-width: 768px) {
   .donation-form-wrapper {
     width: 100%;

@@ -16,13 +16,16 @@ $amount = isset($_GET['type']) ? intval($_GET['type']) : null;
         ?>
     </h1>
 
-    <h2>Your kindness keeps their tails wagging.</h2>
-    <p>
-        Every donation helps Pets Ireland provide
-        food, medical care, and a safe place to rest for animals
-        waiting on their forever homes. Thank you for taking a moment to care
-        for them — it means more than they’ll ever be able to say. 🐾
-    </p>
+    <div class="donation-form-message">
+        <h3>Your kindness keeps their tails wagging.</h3>
+        <p>
+            Every donation helps Pets Ireland provide
+            food, medical care, and a safe place to rest for animals
+            waiting on their forever homes. Thank you for taking a moment to care
+            for them — it means more than they’ll ever be able to say. 🐾
+        </p>
+    </div>
+
 
     <?php
     // CF7 shortcode output here
