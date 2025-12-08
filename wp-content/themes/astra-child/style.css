@@ -126,13 +126,13 @@
   color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .archive-pets-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 425px) {
+@media (max-width: 425px) {
   .archive-pets-grid {
     grid-template-columns: 1fr;
   }
@@ -235,6 +235,20 @@
 }
 
 /* ===== donation form styling ===== */
+
+.donation-form-wrapper {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  padding: 15px 15px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .donation-form-wrapper {
+    width: 100%;
+  }
+}
 
 /* Wrapper border for reference */
 .donation-page {
