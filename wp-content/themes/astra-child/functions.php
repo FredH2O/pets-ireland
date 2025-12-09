@@ -39,3 +39,14 @@ function fred_custom_excerpt_more($more)
 }
 
 add_filter('excerpt_more', 'fred_custom_excerpt_more');
+
+function pets_news_excerpt_length($length)
+{
+    global $post;
+    if (has_category('news', $post)) {
+        return 100;
+    }
+    return $length;
+}
+
+add_filter('excerpt_length', 'pets_news_excerpt_length', 999);
