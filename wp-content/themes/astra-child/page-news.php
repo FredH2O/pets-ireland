@@ -16,11 +16,22 @@ get_header();
     if ($news_query->have_posts()) :
         while ($news_query->have_posts()) : $news_query->the_post(); ?>
             <div class="news-card">
-                <h2><?php the_title(); ?></h2>
                 <?php if (has_post_thumbnail()) {
                     the_post_thumbnail('full');
                 } ?>
+                <h2><?php the_title(); ?></h2>
                 <p><?php the_excerpt(); ?></p>
+                <!-- tags here -->
+                <div class="news-tags">
+                    <?php
+                    $tags = get_the_tags();
+                    if ($tags) {
+                        foreach ($tags as $tag) {
+                            echo '<span class="tag">' . esc_html($tag->name) . '</span>';
+                        }
+                    }
+                    ?>
+                </div>
                 <a href="<?php the_permalink(); ?>">See Post</a>
             </div>
     <?php endwhile;
