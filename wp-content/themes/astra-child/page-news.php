@@ -4,6 +4,7 @@ Template Name: News Page
 */
 get_header();
 ?>
+
 <div class="news-container">
 
     <?php
