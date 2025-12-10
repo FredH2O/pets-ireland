@@ -195,6 +195,7 @@
 .news-card p {
   font-size: 1rem;
   line-height: 1.6;
+  flex: 1;
 }
 
 .news-card a {
@@ -210,6 +211,33 @@
 .news-card a:hover {
   background: #0066cc;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .news-container {
+    grid-template-columns: 1fr;
+    margin: 40px 0;
+    padding: 0;
+  }
+
+  .news-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .news-card img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+  }
 }
 
 /* ===== archive pet single post ===== */
