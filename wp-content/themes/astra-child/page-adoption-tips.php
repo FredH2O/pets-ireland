@@ -16,11 +16,19 @@ get_header(); ?>
 
     if ($adoption_tips_query->have_posts()) :
         while ($adoption_tips_query->have_posts()) : $adoption_tips_query->the_post(); ?>
-            <div>
+
+            <div class="adoption-tips-card">
                 <?php has_post_thumbnail() ? the_post_thumbnail() : null ?>
                 <h2><?php the_title(); ?></h2>
-                <?php the_excerpt(); ?>
+                <div class="">
+                    <?php the_excerpt(); ?>
+                    <a href="<?php the_permalink(); ?>">Read More</a>
+                </div>
             </div>
+            <?php if ($adoption_tips_query->current_post + 1 < $adoption_tips_query->post_count) {
+                echo "<hr/>";
+            } ?>
+
     <?php endwhile;
         wp_reset_postdata();
     else :
