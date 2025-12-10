@@ -173,6 +173,25 @@
   border-radius: 6px;
 }
 
+.news-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: xx-small;
+  font-style: italic;
+}
+
+.news-tags .tag {
+  padding: 0.3rem 0.75rem;
+  background-color: #f2f2f2;
+  border: 1px solid #d9d9d9;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+  cursor: default;
+}
+
 .news-card p {
   font-size: 1rem;
   line-height: 1.6;

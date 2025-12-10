@@ -20,7 +20,13 @@ get_header();
                     the_post_thumbnail('full');
                 } ?>
                 <h2><?php the_title(); ?></h2>
-                <p><?php the_excerpt(); ?></p>
+
+                <?php
+                $excerpt = get_the_excerpt();
+                if (!empty(trim($excerpt))) : ?>
+                    <p><?php echo $excerpt; ?></p>
+                <?php endif; ?>
+
                 <!-- tags here -->
                 <div class="news-tags">
                     <?php
