@@ -11,11 +11,11 @@ add_action('wp_enqueue_scripts', 'astra_child_enqueue_styles');
 function register_pet_post_type()
 {
 
-    $labels = array(
+    $labels = [
         'name' => 'Pets',
         'singular_name' => 'Pet',
         'menu_name' => 'Pets for Adoption',
-    );
+    ];
 
     $args = array(
         'labels' => $labels,
