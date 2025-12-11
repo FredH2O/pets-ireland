@@ -8,7 +8,6 @@ function astra_child_enqueue_styles()
 
 add_action('wp_enqueue_scripts', 'astra_child_enqueue_styles');
 
-add_action('init', 'register_pet_post_type');
 function register_pet_post_type()
 {
 
@@ -22,13 +21,36 @@ function register_pet_post_type()
         'labels' => $labels,
         'public' => true,
         'has_archive' => true,
-        'rewrite' => array('slug' => 'pets'),
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
+        'rewrite' => ['slug' => 'pets'],
+        'supports' => ['title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'],
         'show_in_rest' => true, // gutenburg , acf block
         'menu_icon' => 'dashicons-pets'
     );
     register_post_type('pet', $args);
 }
+
+add_action('init', 'register_pet_post_type');
+
+function register_event_cpt()
+{
+    $labels = [
+        'name' => 'Events',
+        'singular' => 'Event',
+    ];
+
+    $args = [
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => ['slug' => 'events'],
+        'supports' => ['title', 'editor', 'thumbnail'],
+        'capability_type' => 'post',
+        'show_in_rest' => true,
+    ];
+    register_post_type('event', $args);
+}
+add_action('init', 'register_event_cpt');
+
 
 function fred_custom_excerpt_more($more)
 {
