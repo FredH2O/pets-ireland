@@ -36,6 +36,7 @@ function register_event_cpt()
     $labels = [
         'name' => 'Events',
         'singular' => 'Event',
+        'menu_name' => 'Events'
     ];
 
     $args = [
@@ -46,6 +47,7 @@ function register_event_cpt()
         'supports' => ['title', 'editor', 'thumbnail'],
         'capability_type' => 'post',
         'show_in_rest' => true,
+        'menu_icon' => 'dashicons-calendar'
     ];
     register_post_type('event', $args);
 }
