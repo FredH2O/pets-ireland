@@ -445,3 +445,27 @@
 }
 
 /* ===== event page styling ===== */
+
+.events-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.events-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: auto;
+  height: 700px;
+}
+
+.events-cards p {
+  margin-bottom: 0;
+}
+
+.events-cards img {
+  height: 500px;
+  object-fit: cover;
+}
