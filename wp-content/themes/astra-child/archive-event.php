@@ -10,12 +10,17 @@ if (have_posts()) :
     while (have_posts()):
         the_post(); ?>
 
+        <?php if (has_post_thumbnail()) : ?>
+            <?php the_post_thumbnail('full') ?>
+        <?php endif; ?>
+
         <h2><?php the_title() ?></h2>
         <p>Date: <?php the_field('event_date'); ?></p>
         <p>Location: <?php the_field('event_location'); ?></p>
         <div>
             <?php the_content(); ?>
         </div>
+
 <?php
     endwhile;
 else :
