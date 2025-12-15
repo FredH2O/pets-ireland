@@ -35,8 +35,17 @@ function register_event_cpt()
 {
     $labels = [
         'name' => 'Events',
-        'singular' => 'Event',
-        'menu_name' => 'Events'
+        'singular_name' => 'Event',
+        'menu_name' => 'Events',
+        'add_new' => 'Add Event',
+        'add_new_item' => 'Add New Event',
+        'edit_item' => 'Edit Event',
+        'new_item' => 'New Event',
+        'view_item' => 'View Event',
+        'all_items' => 'All Events',
+        'search_items' => 'Search Events',
+        'not_found' => 'No events found',
+        'not_found_in_trash' => 'No events found in Trash',
     ];
 
     $args = [
