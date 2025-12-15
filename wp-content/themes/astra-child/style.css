@@ -469,3 +469,23 @@
   height: 500px;
   object-fit: cover;
 }
+
+@media (max-width: 1024px) {
+  .events-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .events-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 425px) {
+  .events-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

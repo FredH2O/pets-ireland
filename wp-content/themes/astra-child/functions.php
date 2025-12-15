@@ -56,7 +56,9 @@ function register_event_cpt()
         'supports' => ['title', 'editor', 'thumbnail'],
         'capability_type' => 'post',
         'show_in_rest' => true,
-        'menu_icon' => 'dashicons-calendar'
+        'menu_icon' => 'dashicons-calendar',
+        'orderby' => 'date',
+        'order' => 'DESC',
     ];
     register_post_type('event', $args);
 }
