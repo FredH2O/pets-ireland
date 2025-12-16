@@ -6,6 +6,12 @@
  Version: 1.0
 */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --primary: #4caf50;
   --secondary: #2c3e50;
@@ -446,19 +452,29 @@
 
 /* ===== event page styling ===== */
 
+.archive-events {
+  margin: 15px 0;
+  padding: 15px 0;
+}
+
+.archive-events h1 {
+  padding-bottom: 15px;
+}
+
 .events-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding: 10px 0;
   gap: 10px;
 }
 
 .events-cards {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: auto;
-  height: 700px;
 }
 
 .events-cards p {
@@ -466,8 +482,27 @@
 }
 
 .events-cards img {
-  height: 500px;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
   object-fit: cover;
+}
+
+.archive-events-date-and-star {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.event-star {
+  cursor: pointer;
+  font-size: 22px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.event-star.is-active {
+  color: gold;
+  transform: scale(1.1);
 }
 
 @media (max-width: 1024px) {

@@ -8,6 +8,19 @@ function astra_child_enqueue_styles()
 
 add_action('wp_enqueue_scripts', 'astra_child_enqueue_styles');
 
+function astra_child_enqueue_scripts()
+{
+    wp_enqueue_script(
+        'astra-child-js',
+        get_stylesheet_directory_uri() . '/assets/js/main.js',
+        [],
+        '1.0',
+        true
+    );
+}
+
+add_action('wp_enqueue_scripts', 'astra_child_enqueue_scripts');
+
 function register_pet_post_type()
 {
 
