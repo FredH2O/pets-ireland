@@ -1,5 +1,12 @@
 <?php
 
+function astra_child_enqueue_dashicons()
+{
+    wp_enqueue_style('dashicons');
+}
+add_action('wp_enqueue_scripts', 'astra_child_enqueue_dashicons');
+
+
 function astra_child_enqueue_styles()
 {
     wp_enqueue_style('astra-parent', get_template_directory_uri() . '/style.css');

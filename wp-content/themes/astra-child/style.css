@@ -492,6 +492,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  padding-right: 10px;
 }
 
 .event-star {
@@ -500,9 +501,16 @@
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
+.event-star.dashicons-star-empty:before {
+  content: "\f155"; /* empty star glyph */
+}
+
+.event-star.dashicons-star-filled:before {
+  content: "\f153"; /* filled star glyph */
+}
+
 .event-star.is-active {
   color: gold;
-  transform: scale(1.1);
 }
 
 @media (max-width: 1024px) {

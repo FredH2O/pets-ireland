@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
+// star toggling function -----
+document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".event-star").forEach((star) => {
     star.addEventListener("click", function () {
       this.classList.toggle("dashicon-star-empty");
