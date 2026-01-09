@@ -13,7 +13,7 @@
 }
 
 :root {
-  --primary: #4caf50;
+  --primary: #ffffff;
   --secondary: #2c3e50;
   --accent: #f5a623;
   --text: #333333;
@@ -27,6 +27,7 @@
 /* ===== home page styling ===== */
 
 .home .entry-header {
+  color: var(--primary);
   display: none;
 }
 
@@ -574,5 +575,27 @@
   margin: 0;
   color: #555;
   font-size: 0.95rem;
-  line-heigh
+}
+
+/* ===== newsletter styling at home page ===== */
+
+.newsletter-wrapper {
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.tnp.tnp-subscription form {
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.15rem;
+}
+
+.tnp.tnp-subscription form > .tnp-field label {
+  color: var(--secondary);
+}
+
+.tnp.tnp-subscription form > .tnp-field input {
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
 }
