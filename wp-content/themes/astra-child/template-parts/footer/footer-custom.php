@@ -1,3 +1,15 @@
+<?php
+$footer_nav = [
+    'Homepage' => '/',
+    'Who We Are' => '/who-we-are',
+    'How You Can Help' => '/how-you-can-help',
+    'Adopt a Pet' => '/adopt-a-pet',
+    'Lost & Found' => '/lost-and-found',
+    'Shop' => '/shop',
+    'Press & Media Enquiries' => '/press-media-enquiries'
+];
+?>
+
 <footer class="fred-footer">
     <div class="footer-inner">
 
@@ -5,7 +17,7 @@
         <div class="footer-branding">
 
             <!-- Logo & Title-->
-            <div class="footer-logo">
+            <div class="footer-logo-title">
                 <?php if (function_exists('the_custom_logo')) {
                     the_custom_logo();
                 } ?>
@@ -13,7 +25,7 @@
             </div>
 
             <!-- About Info -->
-            <div>
+            <div class="footer-about">
                 <p>The ISPCA works to prevent cruelty to animals all over the Republic of Ireland</p>
 
                 <p>
@@ -30,20 +42,20 @@
         </div>
 
         <!-- Primary Navigation Links -->
-        <div class="second-footer-div">
+        <div class="footer-nav">
             <ul>
-                <li>Homepage</li>
-                <li>Who We Are</li>
-                <li>How You Can Help</li>
-                <li>Adopt a Pet</li>
-                <li>Lost & Found</li>
-                <li>Shop</li>
-                <li>Press & Media Enquiries</li>
+                <?php foreach ($footer_nav as $title => $url): ?>
+                    <li>
+                        <a href="<?php echo esc_url($url); ?>">
+                            <?php echo esc_html($title) ?>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
             </ul>
         </div>
 
         <!-- Secondary Links / Legal -->
-        <div>
+        <div class="footer-legal">
             <ul>
                 <li>About us</li>
                 <li>Contact us</li>
@@ -55,7 +67,7 @@
         </div>
 
         <!-- Social Links -->
-        <div>
+        <div class="footer-socials">
             <!-- Social links / Icons here -->
             <p>Follow us on Instagram</p>
             <!--- Will have 4 images here 2/2 --->
