@@ -1,14 +1,15 @@
-<footer>
-    <div>
+<footer class="fred-footer">
+    <div class="footer-inner">
 
         <!-- Branding / Info / Newsletter -->
-        <div class="first-footer-div">
+        <div class="footer-branding">
 
-            <!-- Logo-->
-            <div>
+            <!-- Logo & Title-->
+            <div class="footer-logo">
                 <?php if (function_exists('the_custom_logo')) {
                     the_custom_logo();
                 } ?>
+                <h3>Pets Ireland</h3>
             </div>
 
             <!-- About Info -->
@@ -62,5 +63,5 @@
 
     </div>
     <!-- Copyrights -->
-    <p>&copy; <?php echo date('Y') ?> Built the right way.</p>
+    <p class="footer-copyrights">&copy; <?php echo date('Y') ?> Built the right way.</p>
 </footer>

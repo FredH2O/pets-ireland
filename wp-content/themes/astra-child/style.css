@@ -599,3 +599,32 @@
   border: 1px solid var(--secondary);
   border-radius: 8px;
 }
+
+/* ===== footer styling ===== */
+.fred-footer {
+  background-color: #111;
+  padding: 5rem 0;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 5rem;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  width: 70px;
+}
+
+.footer-copyrights {
+  margin-bottom: 0;
+  text-align: center;
+}
