@@ -8,7 +8,17 @@ $footer_nav = [
     'Shop' => '/shop',
     'Press & Media Enquiries' => '/press-media-enquiries'
 ];
+
+$footer_legal = [
+    'About us' => '/about-us',
+    'Contact us' => '/contact-us',
+    'Careers' => '/careers',
+    'FAQs' => '/faqs',
+    'Animal Welfare Policies' => '/animal-welfare-policies',
+    'Privacy Policy' => '/privacy-policy'
+];
 ?>
+
 
 <footer class="fred-footer">
     <div class="footer-inner">
@@ -57,12 +67,13 @@ $footer_nav = [
         <!-- Secondary Links / Legal -->
         <div class="footer-legal">
             <ul>
-                <li>About us</li>
-                <li>Contact us</li>
-                <li>Careers</li>
-                <li>FAQ</li>
-                <li>Animal Welfare Policies</li>
-                <li>Privacy Policy</li>
+                <?php foreach ($footer_legal as $title => $url): ?>
+                    <li>
+                        <a href="<?php echo esc_url($url) ?>">
+                            <?php echo esc_html($title) ?>
+                        </a>
+                    </li>
+                <?php endforeach ?>
             </ul>
         </div>
 
