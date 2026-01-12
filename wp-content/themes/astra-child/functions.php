@@ -105,3 +105,10 @@ function pets_news_excerpt_length($length)
 }
 
 add_filter('excerpt_length', 'pets_news_excerpt_length', 999);
+
+function fred_custom_footer()
+{
+    get_template_part('template-parts/footer/footer', 'custom');
+};
+
+add_action('wp_footer', 'fred_custom_footer');
