@@ -39,10 +39,6 @@
   justify-content: center;
 }
 
-.home .wp-block-heading {
-  font-size: 2.5rem;
-}
-
 .home .wp-block-cover__inner-container .hero-content {
   display: flex;
   flex-direction: column;
@@ -52,12 +48,6 @@
 .wp-block-button.is-style-outline .wp-block-button__link:hover {
   transition: 0.2s ease-in-out;
   transform: translateY(-3px);
-}
-
-@media screen and (min-width: 425px) {
-  .home .wp-block-heading {
-    font-size: 4rem;
-  }
 }
 
 /* ===== archive pet grid styling ===== */
@@ -499,7 +489,9 @@
 .event-star {
   cursor: pointer;
   font-size: 22px;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .event-star.dashicons-star-empty:before {
@@ -548,7 +540,9 @@
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   padding: 1.25rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .latest-post:hover {
