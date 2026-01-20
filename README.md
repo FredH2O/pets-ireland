@@ -32,5 +32,16 @@ with Elementor-based pages for flexible content management.
 ### Home
 
 ![Home Page](./images/screenshot.png)
+![Home Page](./images/home-screenshot1.png)
+![Home Page](./images/home-screenshot2.png)
+![Home Page](./images/home-screenshot3.png)
+
+### Custom Post Type
+
+![Custom Post Types](./images/custom-post-type.png)
+
+### Footer
+
+![Footer](./images/footer.png)
 
 <!-- ![Adoption Tips Page](./images/example.png) -->
