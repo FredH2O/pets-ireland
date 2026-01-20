@@ -56,3 +56,7 @@ A fully customised footer built using the child theme to match the site’s bran
 ### Contact Form
 
 ![Contact Us](./images/contact-us.png)
+
+## User Support Experimentation
+
+- Tested Intercom chatbot responses to explore basic automated user support flows
