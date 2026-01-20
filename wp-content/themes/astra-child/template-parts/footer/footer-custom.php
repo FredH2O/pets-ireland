@@ -40,15 +40,11 @@ $footer_legal = [
 
                 <p>
                     <span>Report Cruelty</span>
-                    Call: 0818 515 515 (or +353 43 33 25035 from outside of Republic of Ireland)
+                    Call: 0123 456 789 (or +353 00 00 12345 from outside of Republic of Ireland)
                 </p>
             </div>
 
-            <!-- Newsletter -->
-            <div class="newsletter-wrapper">
-                <h3>Join Our Family and Get Updates on Rescued Pets</h3>
-                <?php echo do_shortcode('[newsletter_form]'); ?>
-            </div>
+
         </div>
 
         <!-- Primary Navigation Links -->
@@ -56,7 +52,7 @@ $footer_legal = [
             <ul>
                 <?php foreach ($footer_nav as $title => $url): ?>
                     <li>
-                        <a href="<?php echo esc_url($url); ?>">
+                        <a href="#">
                             <?php echo esc_html($title) ?>
                         </a>
                     </li>
@@ -69,7 +65,7 @@ $footer_legal = [
             <ul>
                 <?php foreach ($footer_legal as $title => $url): ?>
                     <li>
-                        <a href="<?php echo esc_url($url) ?>">
+                        <a href="#">
                             <?php echo esc_html($title) ?>
                         </a>
                     </li>
@@ -80,11 +76,19 @@ $footer_legal = [
         <!-- Social Links -->
         <div class="footer-socials">
             <!-- Social links / Icons here -->
-            <p>Follow us on Instagram</p>
-            <!--- Will have 4 images here 2/2 --->
+            <div class="socials-container">
+                <a href="#"><span class="dashicons dashicons-twitter"></span></a>
+                <a href="#"><span class="dashicons dashicons-twitch"></span></a>
+                <a href="#"><span class="dashicons dashicons-youtube"></span></a>
+                <a href="#"><span class="dashicons dashicons-linkedin"></span></a>
+            </div>
+            <!--- Will have 4 images here 2/2 ? --->
         </div>
 
     </div>
     <!-- Copyrights -->
-    <p class="footer-copyrights">&copy; <?php echo date('Y') ?> Built the right way.</p>
+    <div class="footer-outer">
+        <p class="footer-copyrights">&copy; <?php echo date('Y') ?> Pets Ireland | All Rights Reserved | Registered Charity Number 1234567 | Registered Company Number 123123, ABC 4567</p>
+        <p>For the Protection of Animals | Created by <i>Frederico</i></p>
+    </div>
 </footer>

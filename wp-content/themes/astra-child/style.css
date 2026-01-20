@@ -594,11 +594,26 @@
   border-radius: 8px;
 }
 
+/* ===== gooogle map styling ===== */
+
+.google-map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ===== footer styling ===== */
 
 .fred-footer {
+  display: flex;
+  flex-direction: column;
   background-color: #111;
+  gap: 1rem;
   padding: 5rem;
+}
+
+.fred-footer a {
+  color: #fff;
 }
 
 .footer-inner {
@@ -606,6 +621,18 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
   padding: 0 5rem;
+}
+
+.footer-outer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
+  justify-items: center;
+  padding: 0 5rem;
+}
+
+.footer-inner > div {
+  padding: 0 10px;
 }
 
 .footer-logo-title {
@@ -637,10 +664,80 @@
 
 .footer-nav ul > li,
 .footer-legal ul > li {
-  font-size: larger;
+  font-size: medium;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.socials-container .dashicons {
+  font-size: 30px;
+}
+
+.socials-container .dashicons-twitter {
+  color: #1da1f2; /* actual Twitter blue */
+}
+
+.socials-container .dashicons-twitch {
+  color: #9146ff; /* Twitch purple */
+}
+
+.socials-container .dashicons-youtube {
+  color: #ff0000; /* YouTube red */
+}
+
+.socials-container .dashicons-linkedin {
+  color: #0a66c2; /* LinkedIn blue */
 }
 
 .footer-copyrights {
   margin-bottom: 0;
-  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .footer-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 0 0;
+  }
+
+  .footer-outer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    gap: 1rem;
+    padding: 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .fred-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 0;
+  }
+
+  .footer-outer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    align-items: start;
+    text-align: start;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+  }
 }
