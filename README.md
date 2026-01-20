@@ -29,6 +29,8 @@ with Elementor-based pages for flexible content management.
 
 ## Screenshots
 
-Screenshots will be added once layouts and content are fully done.
+### Home
+
+![Home Page](./images/screenshot.png)
 
 <!-- ![Adoption Tips Page](./images/example.png) -->
