@@ -32,6 +32,7 @@ with Elementor-based pages to support flexible and user-friendly content managem
 
 ### Home Page
 
+![Home Page](./images/main.png)
 ![Home Page](./images/home-screenshot1.png)
 ![Home Page](./images/home-screenshot2.png)
 ![Home Page](./images/home-screenshot3.png)
