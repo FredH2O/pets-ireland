@@ -60,3 +60,5 @@ A fully customised footer built using the child theme to match the site’s bran
 ## User Support Experimentation
 
 - Tested Intercom chatbot responses to explore basic automated user support flows
+
+“Note: This repository contains the codebase only. Content, menus, and Elementor layouts are database-driven and not included.”
