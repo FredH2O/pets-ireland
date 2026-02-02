@@ -46,7 +46,9 @@ get_header();
                         <span class="event-star dashicons dashicons-star-empty"></span>
                     </div>
 
-                    <h2><?php the_title() ?></h2>
+                    <a href="<?php the_permalink(); ?>" target="_blank">
+                        <h2><?php the_title() ?></h2>
+                    </a>
 
                     <p>Location: <?php the_field('location'); ?></p>
                     <div>
