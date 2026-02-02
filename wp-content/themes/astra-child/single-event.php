@@ -16,14 +16,24 @@ get_header();
             $video_url = '';
 
             echo '<h1>' . esc_html(get_the_title()) . '</h1>';
+    ?>
+            <div class="event-date-location">
+                <?php if ($event_date): ?>
+                    <p>
+                        <strong>Date: </strong>
+                        <?php echo date('F j, Y', strtotime($event_date)) ?>
+                    </p>
+                <?php endif; ?>
 
-            if ($event_date) {
-                echo '<p><strong>Date: </strong>' . date('F j, Y', strtotime($event_date)) . '</p>';
-            }
+                <?php if ($location) : ?>
+                    <p>
+                        <strong>Location: </strong>
+                        <?php echo esc_html($location) ?>
+                    </p>
+                <?php endif; ?>
+            </div>
 
-            if ($location) {
-                echo '<p><strong>Location: </strong> ' . esc_html($location) .  '</p>';
-            }
+    <?php
 
             // Event Gallery
             $gallery_images = [
@@ -71,7 +81,7 @@ get_header();
                 }
 
                 if ($sponsor_name) {
-                    echo '<p>' . esc_html($sponsor_name) . '</p>';
+                    echo '<p>' .  esc_html(strtoupper($sponsor_name)) . '</p>';
                 }
 
                 echo '</div>';
